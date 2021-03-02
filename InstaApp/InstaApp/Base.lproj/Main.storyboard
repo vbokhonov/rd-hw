@@ -18,8 +18,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="instagram_PNG5" translatesAutoresizingMaskIntoConstraints="NO" id="wvI-UU-KIm">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="instagram_PNG5" id="wvI-UU-KIm">
                                 <rect key="frame" x="87" y="199" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="128" id="1l5-Se-gEf"/>
                                     <constraint firstAttribute="width" constant="240" id="gxY-4S-GAJ"/>
@@ -139,6 +140,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="eyeButton" destination="Nbt-MX-G8e" id="fb3-yp-9hs"/>
                         <outlet property="passwordTextField" destination="Cam-kk-xOP" id="g8i-Wc-J9Z"/>
                     </connections>
                 </viewController>

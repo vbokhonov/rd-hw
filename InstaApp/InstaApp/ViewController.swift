@@ -18,6 +18,7 @@ class ViewController: UIViewController {
     //Outlets
     
     @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak var eyeButton: UIButton!
     
     //Outlets END
     
@@ -25,6 +26,7 @@ class ViewController: UIViewController {
     
     @IBAction func showPasswordButton(_ sender: UIButton) {
         print("Show Password button got clicked")
+        passwordTextField.isSecureTextEntry = false
     }
     
     @IBAction func forgotPasswordButton(_ sender: UIButton) {
