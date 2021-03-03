@@ -24,9 +24,12 @@ class ViewController: UIViewController {
     
     //Actions
     
+    private var passwordTextIsHidden: Bool = true
+    
     @IBAction func showPasswordButton(_ sender: UIButton) {
         print("Show Password button got clicked")
-        passwordTextField.isSecureTextEntry = false
+        passwordTextIsHidden = !passwordTextIsHidden
+        passwordTextField.isSecureTextEntry = passwordTextIsHidden
     }
     
     @IBAction func forgotPasswordButton(_ sender: UIButton) {

@@ -16,7 +16,7 @@
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="InstaApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="instagram_PNG5" id="wvI-UU-KIm">
                                 <rect key="frame" x="87" y="199" width="240" height="128"/>
@@ -32,7 +32,7 @@
                                     <constraint firstAttribute="height" constant="50" id="0cg-4d-JBo"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" returnKeyType="done" textContentType="username"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="next" textContentType="username"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Cam-kk-xOP">
                                 <rect key="frame" x="20" y="427" width="374" height="50"/>
@@ -116,20 +116,24 @@
                             <constraint firstItem="MO9-nS-p3S" firstAttribute="centerY" secondItem="QQK-HQ-h3P" secondAttribute="centerY" id="63Z-ZR-ikL"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nw9-DN-IQ4" secondAttribute="trailing" constant="20" id="ATD-XI-QtV"/>
                             <constraint firstItem="Cam-kk-xOP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Alw-jo-8eh"/>
-                            <constraint firstItem="guw-UP-F4A" firstAttribute="leading" secondItem="ENI-Fd-abb" secondAttribute="trailing" constant="10" id="E55-wf-lNf"/>
+                            <constraint firstItem="nw9-DN-IQ4" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" symbolic="YES" id="BHa-lP-HmT"/>
+                            <constraint firstItem="guw-UP-F4A" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="ENI-Fd-abb" secondAttribute="trailing" constant="8" symbolic="YES" id="E55-wf-lNf"/>
                             <constraint firstItem="Nbt-MX-G8e" firstAttribute="trailing" secondItem="Cam-kk-xOP" secondAttribute="trailing" constant="-10" id="Fo2-Jv-YIX"/>
                             <constraint firstItem="aOt-ja-MZb" firstAttribute="top" secondItem="nw9-DN-IQ4" secondAttribute="bottom" constant="45" id="HPR-ku-XZ5"/>
                             <constraint firstItem="GrE-Zw-Bos" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="IJx-lQ-fIi"/>
                             <constraint firstItem="wvI-UU-KIm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="87" id="NtF-b1-QWt"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="MO9-nS-p3S" secondAttribute="trailing" constant="86" id="OBH-vR-ZOH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="TgW-Pr-k5H" secondAttribute="trailing" constant="193" id="Wgg-zI-ala"/>
                             <constraint firstItem="ENI-Fd-abb" firstAttribute="top" secondItem="TgW-Pr-k5H" secondAttribute="bottom" constant="38" id="X5G-ep-eGt"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Cam-kk-xOP" secondAttribute="trailing" constant="20" id="X5k-wB-Ukz"/>
                             <constraint firstItem="aOt-ja-MZb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Xb1-QL-IPP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="guw-UP-F4A" secondAttribute="trailing" constant="76" id="ZvM-5D-mfG"/>
                             <constraint firstItem="MO9-nS-p3S" firstAttribute="top" secondItem="guw-UP-F4A" secondAttribute="bottom" constant="85" id="aGS-cp-1lp"/>
                             <constraint firstItem="QQK-HQ-h3P" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="98" id="aZB-W1-UEg"/>
-                            <constraint firstItem="MO9-nS-p3S" firstAttribute="leading" secondItem="QQK-HQ-h3P" secondAttribute="trailing" constant="10" id="bPw-jO-a3h"/>
+                            <constraint firstItem="MO9-nS-p3S" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="QQK-HQ-h3P" secondAttribute="trailing" constant="8" symbolic="YES" id="bPw-jO-a3h"/>
                             <constraint firstItem="GrE-Zw-Bos" firstAttribute="top" secondItem="wvI-UU-KIm" secondAttribute="bottom" constant="35" id="bbb-hq-8Mo"/>
                             <constraint firstItem="ENI-Fd-abb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="87" id="ejP-dd-56l"/>
-                            <constraint firstItem="TgW-Pr-k5H" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="193" id="iyi-NU-bhb"/>
+                            <constraint firstItem="TgW-Pr-k5H" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="iyi-NU-bhb"/>
                             <constraint firstItem="wvI-UU-KIm" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="155" id="oHV-O2-f9z"/>
                             <constraint firstItem="guw-UP-F4A" firstAttribute="top" secondItem="TgW-Pr-k5H" secondAttribute="bottom" constant="35" id="pJT-19-9q0"/>
                             <constraint firstItem="Nbt-MX-G8e" firstAttribute="centerY" secondItem="Cam-kk-xOP" secondAttribute="centerY" id="qHl-Q4-PQm"/>
